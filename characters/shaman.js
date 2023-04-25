@@ -6,7 +6,6 @@ const lightheal = require("../spells/lightheal");
 class Shaman extends Character{
     constructor (name) {
         super(name, "shaman", 6, 8, 3, 6, 100, 100);
-        this.pets = [];
         const leopold = new Pet("Leopold", 4);
         this.pets.push(leopold);
         this.weapons.push(thunderfury);

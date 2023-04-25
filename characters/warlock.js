@@ -6,7 +6,6 @@ const Character = require("./character");
 class Warlock extends Character {
     constructor (name) {
         super(name, "warlock", 3, 7, 5, 3, 200, 100); // he's going to have low stats but will be able to summon pets to make up for it
-        this.pets = [];
         // every warlock starts with an imp as its first pet!
         const imp = new Pet ("imp", 3);
         this.pets.push(imp);

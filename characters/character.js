@@ -18,6 +18,7 @@ class Character {
         this.mana = mana;
         this.spells = [];
         this.weapons = [];
+        this.pets = [];
         this.activePet = null; // means there's nothing there or returns false;
     }
     level_up() {
@@ -51,7 +52,7 @@ class Character {
             this.defense = this.defense + 10;
             this.attack = this.attack + 3;
             this.magic = this.magic + 4;
-            this.mana = this.mana + 8;
+            this.mana = this.mana + 8;g
         } else if (this.className === "gambler") {
             console.log( "leveling up " + this.className);
             this.speed = this.speed + 25;
